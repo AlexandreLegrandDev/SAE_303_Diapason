@@ -1,5 +1,7 @@
 Diapason - Visualisation et Analyse de data
 
+![Uploading logo-diapason.png…]()
+
 Diapason est un tableau de bord de visualisation de données permettant d’analyser les performances de différents solveurs de problèmes SAT.  
 Le projet met l’accent sur la capacité de résolution (SAT / UNSAT / UNKNOWN) ainsi que sur les temps de calcul, à partir d’un fichier de résultats au format JSON.
 
