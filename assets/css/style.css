@@ -92,24 +92,23 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Dashboard:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+.Dashboard,
+.repartition_resultats,
+.ligne_secondaire {
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: center;
 
 }
 
-.repartition_resultats:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-}
-
+.Dashboard:hover,
+.repartition_resultats:hover,
 .ligne_secondaire:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+  transform: scale(1.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
+
 
 .repartition_resultats {
     width: 30%;
@@ -234,12 +233,10 @@ footer {
     align-items: space-between;
 }
 
-/* CONTENEUR 3D */
 .logo {
   perspective: 1000px;
 }
 
-/* LOGO – ANIMATION 3D EN BOUCLE */
 .logo img {
   display: block;
   margin: auto;
@@ -248,7 +245,6 @@ footer {
   animation: logoFloat3D 6s ease-in-out infinite;
 }
 
-/* KEYFRAMES */
 @keyframes logoFloat3D {
   0% {
     transform: rotate3d(1, 0, 0, 0deg)
